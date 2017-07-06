@@ -41,6 +41,7 @@ interface FlowRouterStatic {
   watchPathChange(): void;
   group(params: FlowRouterGroupParams): FlowRouterGroup;
   subsReady(subscription?: string): boolean;
+  subsReady(callback: Function): void;
 }
 
 declare var FlowRouter: FlowRouterStatic;
